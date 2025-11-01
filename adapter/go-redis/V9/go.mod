@@ -1,11 +1,11 @@
-module github.com/jefferyjob/go-redislock/adapter/go-redis/V9
+module github.com/noahlsl/go-redislock/adapter/go-redis/V9
 
 go 1.24.5
 
-replace github.com/jefferyjob/go-redislock => ../../..
+replace github.com/noahlsl/go-redislock => ../../..
 
 require (
-	github.com/jefferyjob/go-redislock v1.3.0
+	github.com/noahlsl/go-redislock v1.3.0
 	github.com/redis/go-redis/v9 v9.14.1
 )
 

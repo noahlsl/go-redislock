@@ -1,10 +1,10 @@
-module github.com/jefferyjob/go-redislock/examples/adapter/go-zero/V1
+module github.com/noahlsl/go-redislock/examples/adapter/go-zero/V1
 
 go 1.24.5
 
 require (
-	github.com/jefferyjob/go-redislock v1.6.0
-	github.com/jefferyjob/go-redislock/adapter/go-zero/V1 v0.0.0-20251028060203-3d019e2c131a
+	github.com/noahlsl/go-redislock v1.6.0
+	github.com/noahlsl/go-redislock/adapter/go-zero/V1 v0.0.0-20251028060203-3d019e2c131a
 	github.com/zeromicro/go-zero v1.9.2
 )
 

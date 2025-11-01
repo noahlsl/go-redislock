@@ -2,15 +2,16 @@ package v8
 
 import (
 	"context"
+
 	"github.com/go-redis/redis/v8"
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 )
 
 type RedisAdapter struct {
-	client redis.UniversalClient
+	client redis.Cmdable
 }
 
-func New(client redis.UniversalClient) redislock.RedisInter {
+func New(client redis.Cmdable) redislock.RedisInter {
 	return &RedisAdapter{client: client}
 }
 

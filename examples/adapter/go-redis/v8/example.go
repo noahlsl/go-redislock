@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/go-redis/redis/v8"
-	redislock "github.com/jefferyjob/go-redislock"
-	adapter "github.com/jefferyjob/go-redislock/adapter/go-redis/v8"
+	redislock "github.com/noahlsl/go-redislock"
+	adapter "github.com/noahlsl/go-redislock/adapter/go-redis/v8"
 )
 
 func main() {

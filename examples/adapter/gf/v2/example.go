@@ -6,8 +6,8 @@ import (
 
 	_ "github.com/gogf/gf/contrib/nosql/redis/v2" // 注册 Redis 适配器（必须）
 	"github.com/gogf/gf/v2/database/gredis"
-	redislock "github.com/jefferyjob/go-redislock"
-	adapter "github.com/jefferyjob/go-redislock/adapter/gf/v2"
+	redislock "github.com/noahlsl/go-redislock"
+	adapter "github.com/noahlsl/go-redislock/adapter/gf/v2"
 )
 
 func main() {

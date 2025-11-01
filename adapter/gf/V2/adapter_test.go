@@ -9,7 +9,7 @@ import (
 
 	_ "github.com/gogf/gf/contrib/nosql/redis/v2"
 	"github.com/gogf/gf/v2/database/gredis"
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 )
 
 var (

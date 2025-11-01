@@ -6,7 +6,6 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/redis/go-redis/v9"
 )
 
 // RedisInter Redis 客户端接口
@@ -73,7 +72,7 @@ type RedisLockInter interface {
 }
 
 type RedisLock struct {
-	redis           redis.Cmdable
+	redis           RedisInter
 	key             string
 	token           string
 	lockTimeout     time.Duration
@@ -85,7 +84,7 @@ type RedisLock struct {
 type Option func(lock *RedisLock)
 
 // New creates a RedisLock instance
-func New(redisClient redis.Cmdable, lockKey string, options ...Option) RedisLockInter {
+func New(redisClient RedisInter, lockKey string, options ...Option) RedisLockInter {
 	lock := &RedisLock{
 		redis:          redisClient,
 		lockTimeout:    lockTime,       // 锁默认超时时间

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 )
 
 type Ticket struct {

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/gogf/gf/database/gredis"
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 )
 
 var (

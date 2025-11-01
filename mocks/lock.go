@@ -10,7 +10,7 @@ import (
 	time "time"
 
 	gomock "github.com/golang/mock/gomock"
-	go_redislock "github.com/jefferyjob/go-redislock"
+	go_redislock "github.com/noahlsl/go-redislock"
 )
 
 // MockRedisInter is a mock of RedisInter interface.

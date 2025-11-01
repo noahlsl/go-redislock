@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 	"github.com/zeromicro/go-zero/core/stores/redis"
 )
 

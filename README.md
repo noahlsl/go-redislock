@@ -1,12 +1,12 @@
 # go-redislock
 
 [![Go](https://img.shields.io/badge/Go->=1.24-green)](https://go.dev)
-[![Release](https://img.shields.io/github/v/release/jefferyjob/go-redislock.svg)](https://github.com/jefferyjob/go-redislock/releases)
-[![Action](https://github.com/jefferyjob/go-redislock/actions/workflows/go.yml/badge.svg)](https://github.com/jefferyjob/go-redislock/actions/workflows/go.yml)
-[![Report](https://goreportcard.com/badge/github.com/jefferyjob/go-redislock)](https://goreportcard.com/report/github.com/jefferyjob/go-redislock)
+[![Release](https://img.shields.io/github/v/release/jefferyjob/go-redislock.svg)](https://github.com/noahlsl/go-redislock/releases)
+[![Action](https://github.com/noahlsl/go-redislock/actions/workflows/go.yml/badge.svg)](https://github.com/noahlsl/go-redislock/actions/workflows/go.yml)
+[![Report](https://goreportcard.com/badge/github.com/noahlsl/go-redislock)](https://goreportcard.com/report/github.com/noahlsl/go-redislock)
 [![Coverage](https://codecov.io/gh/jefferyjob/go-redislock/branch/main/graph/badge.svg)](https://codecov.io/gh/jefferyjob/go-redislock)
-[![Doc](https://img.shields.io/badge/go.dev-reference-brightgreen?logo=go&logoColor=white&style=flat)](https://pkg.go.dev/github.com/jefferyjob/go-redislock)
-[![License](https://img.shields.io/github/license/jefferyjob/go-redislock)](https://github.com/jefferyjob/go-redislock/blob/main/LICENSE)
+[![Doc](https://img.shields.io/badge/go.dev-reference-brightgreen?logo=go&logoColor=white&style=flat)](https://pkg.go.dev/github.com/noahlsl/go-redislock)
+[![License](https://img.shields.io/github/license/jefferyjob/go-redislock)](https://github.com/noahlsl/go-redislock/blob/main/LICENSE)
 
 [English](README.en.md) | 简体中文
 
@@ -28,7 +28,7 @@ go-redislock 是一个用于 Go 的库，用于使用 Redis 作为后端存储�
 
 ### 安装
 ```bash
-go get -u github.com/jefferyjob/go-redislock
+go get -u github.com/noahlsl/go-redislock
 ```
 
 ### 使用Demo
@@ -39,8 +39,8 @@ import (
 	"context"
 	"fmt"
 
-	redislock "github.com/jefferyjob/go-redislock"
-	adapter "github.com/jefferyjob/go-redislock/adapter/go-redis/v9"
+	redislock "github.com/noahlsl/go-redislock"
+	adapter "github.com/noahlsl/go-redislock/adapter/go-redis/v9"
 	"github.com/redis/go-redis/v9"
 )
 
@@ -159,12 +159,12 @@ go-redislock 提供高度可扩展的客户端适配机制，已内置支持以�
 
 | Redis客户端版本       | 包路径                                                      | 是否支持 |
 |------------------|----------------------------------------------------------| -------- |
-| go-redis v7      | `github.com/jefferyjob/go-redislock/adapter/go-redis/V7` | ✅        |
-| go-redis v8      | `github.com/jefferyjob/go-redislock/adapter/go-redis/V8` | ✅        | 
-| go-redis v9      | `github.com/jefferyjob/go-redislock/adapter/go-redis/V9` | ✅        | 
-| go-zero redis    | `github.com/jefferyjob/go-redislock/adapter/go-zero/V1`  | ✅        | 
-| goframe v1 redis | `github.com/jefferyjob/go-redislock/adapter/gf/V1`       | ✅        |
-| goframe v2 redis | `github.com/jefferyjob/go-redislock/adapter/gf/V2`       | ✅        |
+| go-redis v7      | `github.com/noahlsl/go-redislock/adapter/go-redis/V7` | ✅        |
+| go-redis v8      | `github.com/noahlsl/go-redislock/adapter/go-redis/V8` | ✅        | 
+| go-redis v9      | `github.com/noahlsl/go-redislock/adapter/go-redis/V9` | ✅        | 
+| go-zero redis    | `github.com/noahlsl/go-redislock/adapter/go-zero/V1`  | ✅        | 
+| goframe v1 redis | `github.com/noahlsl/go-redislock/adapter/gf/V1`       | ✅        |
+| goframe v2 redis | `github.com/noahlsl/go-redislock/adapter/gf/V2`       | ✅        |
 
 如您使用的 Redis 客户端不在上述列表中，也可以实现接口 `RedisInter` 来接入任意 Redis 客户端。
 

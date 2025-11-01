@@ -8,7 +8,7 @@ package main
 
 import (
 	"context"
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 )
 
 // GoodLock 每次加锁创建新的 RedisLock 实例。

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 )
 
 type Order struct {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	redislock "github.com/jefferyjob/go-redislock"
-	adapter "github.com/jefferyjob/go-redislock/adapter/go-zero/V1"
+	redislock "github.com/noahlsl/go-redislock"
+	adapter "github.com/noahlsl/go-redislock/adapter/go-zero/V1"
 	"github.com/zeromicro/go-zero/core/stores/redis"
 )
 

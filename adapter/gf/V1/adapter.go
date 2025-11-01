@@ -5,7 +5,7 @@ import (
 
 	"github.com/gogf/gf/database/gredis"
 	"github.com/gogf/gf/frame/g"
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 )
 
 type RdbAdapter struct {

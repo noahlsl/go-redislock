@@ -1,17 +1,17 @@
-module github.com/jefferyjob/go-redislock/examples/adapter/gf/v2
+module github.com/noahlsl/go-redislock/examples/adapter/gf/v2
 
 go 1.24.5
 
 // For local testing, please ignore this configuration
 replace (
-	github.com/jefferyjob/go-redislock/adapter/gf/v2 => ../../../adapter/gf/v2
-	github.com/jefferyjob/go-redislock@latest => ../../..
+	github.com/noahlsl/go-redislock/adapter/gf/v2 => ../../../adapter/gf/v2
+	github.com/noahlsl/go-redislock@latest => ../../..
 )
 
 require (
 	github.com/gogf/gf/contrib/nosql/redis/v2 v2.9.4
 	github.com/gogf/gf/v2 v2.9.4
-	github.com/jefferyjob/go-redislock v1.4.0
+	github.com/noahlsl/go-redislock v1.4.0
 )
 
 require (

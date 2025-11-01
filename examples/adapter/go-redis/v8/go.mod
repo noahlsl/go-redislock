@@ -1,14 +1,14 @@
-module github.com/jefferyjob/go-redislock/examples/adapter/go-redis/v8
+module github.com/noahlsl/go-redislock/examples/adapter/go-redis/v8
 
 go 1.24.5
 
 // For local testing, please ignore this configuration
-replace github.com/jefferyjob/go-redislock@latest => ../../..
+replace github.com/noahlsl/go-redislock@latest => ../../..
 
 require (
 	github.com/go-redis/redis/v8 v8.11.5
-	github.com/jefferyjob/go-redislock v1.4.0
-	github.com/jefferyjob/go-redislock/adapter/go-redis/v8 v8.0.0-20251022110012-7fa8953ae22a
+	github.com/noahlsl/go-redislock v1.4.0
+	github.com/noahlsl/go-redislock/adapter/go-redis/v8 v8.0.0-20251022110012-7fa8953ae22a
 )
 
 require (

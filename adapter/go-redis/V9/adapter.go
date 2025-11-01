@@ -3,15 +3,15 @@ package v9
 import (
 	"context"
 
-	redislock "github.com/jefferyjob/go-redislock"
+	redislock "github.com/noahlsl/go-redislock"
 	"github.com/redis/go-redis/v9"
 )
 
 type RedisAdapter struct {
-	client redis.UniversalClient
+	client redis.Cmdable
 }
 
-func New(client redis.UniversalClient) redislock.RedisInter {
+func New(client redis.Cmdable) redislock.RedisInter {
 	return &RedisAdapter{client: client}
 }
 
