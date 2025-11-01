@@ -1,8 +1,6 @@
 module github.com/noahlsl/go-redislock
 
-go 1.24
-
-retract v1.0.0
+go 1.24.5
 
 require (
 	github.com/go-redis/redis/v7 v7.4.1
