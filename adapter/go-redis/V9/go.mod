@@ -6,7 +6,7 @@ replace github.com/noahlsl/go-redislock => ../../..
 
 require (
 	github.com/noahlsl/go-redislock v1.3.0
-	github.com/redis/go-redis/v9 v9.14.1
+	github.com/redis/go-redis/v9 v9.16.0
 )
 
 require (
